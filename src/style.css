@@ -1,0 +1,27 @@
+body {
+    background-color: #e2e8f0;
+}
+
+.welcome-container {
+    background-color: #f8fafc;
+    padding: 50px;
+    border-radius: 32px;
+    box-shadow: 2px 4px 4px #888;
+
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 50px;
+}
+.welcome-container img {
+    width: auto;
+    height: 50vh;
+}
+.res-name {
+    font-size: 48px;
+    font-weight: 700;
+}
+.res-slogan {
+    font-size: 32px;
+    font-style: italic;
+    margin-bottom: 24px;
+}
