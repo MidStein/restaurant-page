@@ -1,0 +1,4 @@
+# restaurant-page
+Creating a simple restaurant website with homepage, contacts and menu tabs. All of the details regarding the restaurant, its managers and food are directly availabe through this single webpage and the visitor need not visit another page or click a link.
+
+Going to practice my knowledge about modules and package management of multiple modules using powerful software like npm and webpack. The website uses navigation using tabbed access which will require application of one module per each tab, so this project demands the importing of multiple modules in the main javascript file responsible for collecting these modules.
