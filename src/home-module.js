@@ -1,7 +1,7 @@
-export default function getHomepage() {
+export default function getHome() {
     const welcomeContainer = document.createElement('div');
-    const welcomeImage = document.createElement('img');
-    const text = document.createElement('div');
+    const welcomeImage = new Image();
+    const welcomeText = document.createElement('div');
     const resName = document.createElement('div');
     const resSlogan = document.createElement('div');
     const resCopy = document.createElement('div');
@@ -17,17 +17,17 @@ export default function getHomepage() {
     Happy drinking and relaxing."
 
     welcomeContainer.classList.add('welcome-container');
-    welcomeImage.setAttribute('src', '../dist/restaurant-photo.jpg');
-    text.classList.add('text');
+    welcomeImage.setAttribute('src', '../src/images/restaurant-photo.jpg');
+    welcomeText.classList.add('welcome-text');
     resName.classList.add('res-name');
     resSlogan.classList.add('res-slogan');
     resCopy.classList.add('res-copy');
 
     welcomeContainer.appendChild(welcomeImage);
-    welcomeContainer.appendChild(text);
-    text.appendChild(resName);
-    text.appendChild(resSlogan);
-    text.appendChild(resCopy);
+    welcomeContainer.appendChild(welcomeText);
+    welcomeText.appendChild(resName);
+    welcomeText.appendChild(resSlogan);
+    welcomeText.appendChild(resCopy);
 
     return welcomeContainer;
 }

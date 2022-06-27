@@ -1,10 +1,41 @@
 body {
     background-color: #e2e8f0;
+    font-family: sans-serif;
+}
+
+.tabs {
+    text-align: center;
+    background-color: #e5e7eb;
+    width: 250px;
+    padding-top: 8px;
+    border-radius: 8px 8px 0 0 ;
+    margin: 0 32px;
+
+    display: grid;
+    grid-template-columns: 80px 80px 80px;
+    justify-content: center;
+    gap: 1px;
+}
+.tab {
+    padding: 8px;
+    border: 2px solid #000;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.tab-selected {
+    font-weight: 700;
+    background-color: #f8fafc;
+    border: 3px solid #000;
+    border-bottom: #f8fafc;
+    border-radius: 4px 4px 0 0;
+    position: relative;
+    top: 1px;
 }
 
 .welcome-container {
     background-color: #f8fafc;
     padding: 50px;
+    border-top: 1px solid #000;
     border-radius: 32px;
     box-shadow: 2px 4px 4px #888;
 
@@ -24,4 +55,64 @@ body {
     font-size: 32px;
     font-style: italic;
     margin-bottom: 24px;
+}
+
+.contacts-container {
+    background-color: #f8fafc;
+    padding: 0 50px;
+    border-top: 1px solid #000;
+    border-radius: 32px;
+    box-shadow: 2px 4px 4px #888;
+}
+.contact-card {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 32px;
+    padding: 40px;
+}
+.contacts-container img {
+    width: 250px;
+    height: 300px;
+    border: 8px solid #444;
+    border-radius: 4px;
+}
+.contact-info * {
+    font-size: 24px;
+    margin-top: 16px;
+}
+.contact-info span {
+    font-weight: 700;
+    text-decoration: underline;
+}
+
+.menu-container {
+    background-color: #f8fafc;
+    padding: 50px;
+    border-top: 1px solid #000;
+    border-radius: 32px;
+    box-shadow: 2px 4px 4px #888;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 64px;
+}
+.menu-card {
+    background-color: #94a3b8;
+    padding: 24px;
+    border-radius: 16px;
+
+    display: grid;
+    justify-content: center;
+}
+.menu-card img {
+    width: 275px;
+    height: 325px;
+}
+.drink-details {
+    font-size: 20px;
+    font-weight: 700;
+    text-align: center;
+    background-color: #334155;
+    color: #22d3ee;
+    border-radius: 0 0 8px 8px;
 }
